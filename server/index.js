@@ -23,7 +23,10 @@ app.use(sessionCTRL.create)
 
 
 /************* ENDPOINTS ***************/
-app.get('/api/test', CTRL.get)
+app.get('/api/test', CTRL.test)
+app.get('/api/transactions', CTRL.getTransactions)
+app.get('/api/essentialTrans', CTRL.essentialTransactions)
+app.get('/api/lifestyleTrans', CTRL.lifestyleTransactions)
 
 //////// MASSIVE ////////
 massive(CONNECTION_STRING).then(dbInstance => {

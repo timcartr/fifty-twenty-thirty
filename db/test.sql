@@ -1,1 +1,1 @@
-select * from budgets
+select * from users
